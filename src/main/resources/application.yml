@@ -1,0 +1,17 @@
+server:
+  port: 8081
+spring:
+  mail:
+    #协议：SMTP，IMAP、POP3
+    protocol: smtp
+    #发件人邮箱服务地址
+    host: smtp.163.com
+    #发件人账号
+    username: xf88023@163.com
+    #第三方登录校验码，非密码，进入邮箱，设置授权码
+    password: XKNWOAMJIJCLEIYY
+    default-encoding: UTF-8
+    #发件人信息，非必须
+    from:
+      address: 寻风<xf88023@163.com>
+    port: 25

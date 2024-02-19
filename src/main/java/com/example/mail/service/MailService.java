@@ -77,6 +77,15 @@ public class MailService {
         }
     }
 
+    /**
+     * 根据thymeleaf模版发送邮件
+     *
+     * @param subject
+     * @param toMail
+     * @param context
+     * @param templateName
+     * @param fileList
+     */
     public void sendHtmlMail(String subject, String toMail, Context context, String templateName, List<String> fileList) {
         MimeMessage message = javaMailSender.createMimeMessage();
         try {
@@ -111,10 +120,10 @@ public class MailService {
      */
     public void sendMail(MailInfo mail) throws Exception {
         if (mail.getToMail() == null || mail.getToMail().isEmpty()) {
-            throw  new Exception("收件人不能为空");
+            throw new Exception("收件人不能为空");
         }
         if (null == mail.getMailEnum()) {
-            throw  new Exception("邮件类型不能为空");
+            throw new Exception("邮件类型不能为空");
         }
         MailEnum mailEnum = mail.getMailEnum();
         Context context = new Context();
