@@ -9,7 +9,7 @@ spring:
     #发件人账号
     username: xf88023@163.com
     #第三方登录校验码，非密码，进入邮箱，设置授权码
-    password: XKNWOAMJIJCLEIYY
+    password: ********
     default-encoding: UTF-8
     #发件人信息，非必须
     from:
